@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>AUTOTYPE v3.0</title>
+  <script type="text/javascript" src="/eel.js"></script>
+  <link rel="stylesheet" href="style.css"></link>
+  <script type="text/javascript" src="func.js"></script>
+</head>
+
+<body>
+  <div class='main_frame'>
+    <div class='logo_box'>
+      <span class='img'></span>
+    </div>
+    <div class='command_box'>
+      <div class='cmd'>
+        <input type='text' placeholder='command' class='cmd_entry' id='cmd1' />
+        <input type='text' placeholder='command' class='cmd_entry' id='cmd2' />
+        <input type='text' placeholder='command' class='cmd_entry' id='cmd3' />
+        <input type='text' placeholder='command' class='cmd_entry' id='cmd4' />
+      </div>
+      <div class='sec'>
+        <input type='text' placeholder='sec' class='sec_entry' id='sec1' oninput="value=value.replace(/[^\d]/g,'')" />
+        <input type='text' placeholder='sec' class='sec_entry' id='sec2' oninput="value=value.replace(/[^\d]/g,'')" />
+        <input type='text' placeholder='sec' class='sec_entry' id='sec3' oninput="value=value.replace(/[^\d]/g,'')" />
+        <input type='text' placeholder='sec' class='sec_entry' id='sec4' oninput="value=value.replace(/[^\d]/g,'')" />
+      </div>
+      <div class='check'>
+        <input type='checkbox' id='loop1' /><label for='loop1' onclick='sound()' /></label>
+        <input type='checkbox' id='loop2' /><label for='loop2' onclick='sound()' /></label>
+        <input type='checkbox' id='loop3' /><label for='loop3' onclick='sound()' /></label>
+        <input type='checkbox' id='loop4' /><label for='loop4' onclick='sound()' /></label>
+      </div>
+    </div>
+    <div class='button_box'>
+      <input type='button' id='start' value='START' class='btn' onclick='start(); sound()' />
+      <input type='button' id='stop' value='STOP' class='btn' onclick='stop(); sound(); stops()' />
+      <input type='button' id='reset' value='RESET' class='btn' onclick='reset(); sound()'/>
+      <input type='button' value='GITHUB' class='btn' onclick='sound(); githun()'/>
+    </div>
+</body>
+
+</html>

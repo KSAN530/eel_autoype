@@ -1,0 +1,169 @@
+html {
+  background-color: #3C485E;
+  cursor: url('img/cursor.ico'), default;
+  -webkit-user-select: none;
+}
+
+.main_frame {
+  width: 500px;
+  height: 200px;
+  border: 3px #95afba solid;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -103px 0 0 -253px;
+}
+
+.logo_box {
+  width: 160px;
+  height: 200px;
+  float: left;
+  border: 1px #95afba solid;
+  position: relative;
+  overflow: hidden;
+}
+
+.command_box {
+  width: 335px;
+  height: 150px;
+  float: left;
+}
+
+.button_box {
+  width: 336px;
+  height: 50px;
+  float: left;
+  border: 1px #95afba solid;
+}
+
+.cmd {
+  width: 180px;
+  height: 150px;
+  float: left;
+}
+
+.sec {
+  width: 70px;
+  height: 150px;
+  float: left;
+}
+
+.check {
+  width: 80px;
+  height: 150px;
+  float: left;
+}
+
+.img {
+  width: 148px;
+  height: 188px;
+  background-color: #95afba;
+  background-image: url('img/autotype.png');
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 1px;
+  margin: auto;
+}
+
+.cmd_entry {
+  width: 150px;
+  height: 20px;
+  border: 3px #95afba solid;
+  border-radius: 10px;
+  background-color: #3C485E;
+  font-size: 20px;
+  font-family: 'DisposableDroid BB';
+  color: #95afba;
+  text-align: center;
+  margin: 6.5px 0 0 10px;
+  outline: none;
+  opacity: 0.7;
+  transition: 0.3s;
+  cursor: url('img/cursor.ico'), default;
+}
+
+.sec_entry {
+  width: 50px;
+  height: 20px;
+  border: 3px #95afba solid;
+  border-radius: 10px;
+  background-color: #3C485E;
+  font-size: 20px;
+  font-family: 'DisposableDroid BB';
+  color: #95afba;
+  text-align: center;
+  margin: 6.5px 0 0 -5px;
+  outline: none;
+  opacity: 0.7;
+  transition: 0.3s;
+  cursor: url('img/cursor.ico'), default;
+}
+
+.cmd_entry:hover, .sec_entry:hover {
+  opacity: 1;
+}
+
+.cmd_entry:focus, .sec_entry:active {
+  opacity: 1;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]+label:before {
+  width: 80px;
+  height: 22px;
+  line-height: 22px;
+  font-size: 20px;
+  font-style: bold;
+  font-family: 'DisposableDroid BB';
+  color: #95afba;
+  border: 3px #95afba solid;
+  content: 'LOOP';
+  /* non-break space */
+  display: inline-block;
+  text-align: center;
+  border-radius: 10px;
+  background: #3C485E;
+  opacity: 0.5;
+  transition: 0.3s;
+  margin: 6.5px 0 0 -10px;
+  cursor: url('img/cursor.ico'), default;
+}
+
+input[type="checkbox"]:checked+label:before {
+  opacity: 1;
+  background: #95afba;
+  border: 3px #95afba solid;
+  color: #3C485E;
+}
+
+input[type="checkbox"]:hover+label:before {
+  opacity: 1;
+}
+
+.btn {
+  background-color: #3C485E;
+  border-radius: 8px;
+  border: 3px #95afba solid;
+  width: 68px;
+  height: 35px;
+  color: #95afba;
+  font-family: 'DisposableDroid BB';
+  font-size: 15px;
+  margin: 7px 0 0 10px;
+  transition: 0.3s;
+  cursor: url('img/cursor.ico'), default;
+}
+
+.btn:hover {
+  background-color: #95afba;
+  color: #3C485E;
+}
+
+.btn:active {
+  opacity: 0.5;
+}
