@@ -71,7 +71,7 @@ function stop() {
 }
 
 function githun() {
-  window.open('https://github.com/KSAN530');
+  window.open('https://github.com/KSAN530/eel_autoype');
 }
 
 function reset() {
